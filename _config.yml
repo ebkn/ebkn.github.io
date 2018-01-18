@@ -13,12 +13,13 @@ style: styles-6
 #Profile information
 name: Kenichi Ebinuma
 tagline: University student, Web Developer
-pic: profile.png  #place a 100x100 picture inside /assets/images/ folder and provide the name of the file below
-summary: ''
+pic: profile.jpg
+summary: "I'm a 2nd grade of university student at Meiji University. I'm interested in web programing. I've studied Ruby on Rails since March 2017."
 
 #sidebar links
 github: ebkn12
 twitter: '@ebikentennis'
+facebook: 'kenichi.ebinuma.9'
 #Update all the sections by editing the files inside _data folder.
 
 # Tracker

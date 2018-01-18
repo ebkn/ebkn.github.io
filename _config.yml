@@ -1,0 +1,32 @@
+# Site Settings
+title: Kenichi Ebinuma
+url: 'https://ebkn12.github.io'
+baseurl: '' #change it according to your repository name
+
+# Enable one of these styles by removing #. Style will be applied only after restarting the build or serve.
+# style: styles-2
+# style: styles-3
+# style: styles-4
+# style: styles-5
+style: styles-6
+
+#Profile information
+name: Kenichi Ebinuma
+tagline: University student, Web Developer
+pic: profile.png  #place a 100x100 picture inside /assets/images/ folder and provide the name of the file below
+summary: ''
+
+#sidebar links
+github: ebkn12
+twitter: '@ebikentennis'
+#Update all the sections by editing the files inside _data folder.
+
+# Tracker
+analytics: UA-83979019-1
+
+# Build settings
+encoding: "utf-8"
+compress_html: # - http://jch.penibelst.de/
+  clippings: all
+  ignore:
+    envs: development

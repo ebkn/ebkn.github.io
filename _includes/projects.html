@@ -12,10 +12,14 @@
   {% for project in site.data.projects %}
     <div class="item">
 
+      {% if project.img %}
+        <img class="project-img" src="assets/images/{{ project.img }}">
+      {% endif %}
+
       <span class="project-title"><a href="{{ project.link }}">{{ project.title }}</a></span>
 
-      {% if project.tagline %}
-      - <span class="project-tagline">{{ project.tagline }}</span>
+      {% if project.detail %}
+        - <span class="project-tagline">{{ project.detail }}</span>
       {% endif %}
 
     </div><!--//item-->

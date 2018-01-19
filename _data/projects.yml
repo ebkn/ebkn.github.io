@@ -4,8 +4,33 @@
 - project:
   title: FWorks
   link: "http://fworks.nkmr.io/top.php"
-  tagline: "Works posts service for students of FMS. Team work with Nakamura lab.(B) in contents media programing practical."
+  detail: "Posting works service for students of FMS. Team work with Nakamura lab.(B). I(we) presented this at contents media programing practical. I(we) used only naked PHP(no frameworks)."
+  img: fworks.png
+- project:
+  title: pocket-slackbot
+  link: "https://github.com/ebkn12/py-pocket-slackbot"
+  detail: "Slack bot for using pocket. You can add articles, show lists saved in pocket. I used Python(slackbot library)."
+  img: "pocket-slackbot.png"
+- project:
+  title: AR-door
+  link: "https://github.com/ebkn12/portal-arkit"
+  detail: "iOS application using ARKit. You can create the door to different location. I used Swift. I presented this at conputer graphics base."
+- project:
+  title: protospace
+  link: "https://github.com/ebkn12/protospace"
+  detail: "Posting prototype(web application, design, any other prototypes) service. I created this at TECH::CAMP. I used Ruby on Rails."
+  img: protospace.png
+- project:
+  title: chatspace
+  link: "https://github.com/ebkn12/chat-space"
+  detail: "Simple chat service. I created this at TECH::CAMP. I used Ruby on Rails."
+- project:
+  title: Elevator architecture
+  link: "https://github.com/ebkn12/Elevator"
+  detail: "My first work for Processing. I created the elevator architecture like my campus(Nakano). I presented this at programing practice Ⅰ."
+  img: elevator.png
 - project:
   title: Tennis game by HSP
   link: "https://github.com/ebkn12/TennisGame"
-  tagline: "This is my first programing. I created the interactive tennis game using HSP(programing language)."
+  detail: "My first work for programing. I created the interactive tennis game using HSP(programing language). I presented this at entertainment programing practice."
+  img: tennisgame.png

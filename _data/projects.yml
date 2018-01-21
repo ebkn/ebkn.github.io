@@ -15,6 +15,7 @@
   title: AR-door
   link: "https://github.com/ebkn12/portal-arkit"
   detail: "iOS application using ARKit. You can create the door to different location. I used Swift. I presented this at conputer graphics base."
+  img: "ardoor.jpg"
 - project:
   title: protospace
   link: "https://github.com/ebkn12/protospace"

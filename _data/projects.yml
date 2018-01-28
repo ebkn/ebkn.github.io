@@ -1,37 +1,30 @@
-# - intro:
-#   description: "You can list your side projects or open source libraries in this section. Lorem ipsum dolor
-#   sit amet, consectetur adipiscing elit. Vestibulum et ligula in nunc bibendum fringilla a eu lectus."
 - project:
   title: FWorks
   link: "http://fworks.nkmr.io/top.php"
-  detail: "Posting works service for students of FMS. Team work with Nakamura lab.(B). I(we) presented this at contents media programing practical. I(we) used only naked PHP(no frameworks)."
+  detail: "Posting works service for students of FMS. I created this with Nakamura lab.(B). We gave a presentation at contents media programing practical. We used only naked PHP(no frameworks)."
   img: fworks.png
 - project:
   title: pocket-slackbot
   link: "https://github.com/ebkn12/py-pocket-slackbot"
-  detail: "Slack bot for using pocket. You can add articles, show lists saved in pocket. I used Python(slackbot library)."
+  detail: "Slack bot for using pocket. You can add articles, show lists and save to pocket. I used Python."
   img: "pocket-slackbot.png"
 - project:
   title: AR-door
   link: "https://github.com/ebkn12/portal-arkit"
-  detail: "iOS application using ARKit. You can create the door to different location. I used Swift. I presented this at conputer graphics base."
+  detail: "You can create the door to different location. I used ARKit. I gave a presentation at conputer graphics base."
   img: "ardoor.jpg"
 - project:
   title: protospace
   link: "https://github.com/ebkn12/protospace"
-  detail: "Posting prototype(web application, design, any other prototypes) service. I created this at TECH::CAMP. I used Ruby on Rails."
+  detail: "Posting prototypes service. I created this at TECH::CAMP. I used Ruby on Rails."
   img: protospace.png
-- project:
-  title: chatspace
-  link: "https://github.com/ebkn12/chat-space"
-  detail: "Simple chat service. I created this at TECH::CAMP. I used Ruby on Rails."
 - project:
   title: Elevator architecture
   link: "https://github.com/ebkn12/Elevator"
-  detail: "My first work for Processing. I created the elevator architecture like my campus(Nakano). I presented this at programing practice Ⅰ."
+  detail: "My first work for Processing. I created the elevator architecture like my campus(Nakano). I gave a presentation at programing practice 1."
   img: elevator.png
 - project:
-  title: Tennis game by HSP
+  title: Tennis game
   link: "https://github.com/ebkn12/TennisGame"
-  detail: "My first work for programing. I created the interactive tennis game using HSP(programing language). I presented this at entertainment programing practice."
+  detail: "My first work. I created the interactive tennis game. I used HSP. I gave a presentation at entertainment programing practice."
   img: tennisgame.png

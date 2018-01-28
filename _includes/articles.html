@@ -1,0 +1,19 @@
+{% if site.data.articles %}
+<section class="section internships-section">
+  <h2 class="section-title"><i class="fa fa-archive"></i>Articles</h2>
+
+{% for article in site.data.articles %}
+  <div class="item article-block">
+
+    <div class="project-title">
+      <a href="{{ article.url }}">
+        {{ article.title }}
+      </a>
+    </div>
+    <div class="article-time">{{ article.time }}</div>
+
+  </div><!--//item-->
+{% endfor %}
+
+</section><!--//section-->
+{% endif %}

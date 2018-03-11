@@ -11,5 +11,8 @@
   name: Python
   level: 30%
 - skill:
+  name: Golang
+  level: 30%
+- skill:
   name: Processing
   level: 30%

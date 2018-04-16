@@ -1,34 +1,40 @@
 - project:
   title: FWorks
   link: "http://fworks.nkmr.io/top.php"
-  detail: "Posting works service for students of FMS. I created this with Nakamura lab.(B). We gave a presentation at contents media programing practical. We used only naked PHP(no frameworks)."
+  detail: "Posting works service for students of FMS. I created this with Nakamura lab.(B). We made a presentation at contents media programing practical class. We used only naked PHP(no frameworks)."
   img: fworks.png
-- project:
-  title: pocket-slackbot
-  link: "https://github.com/ebkn12/py-pocket-slackbot"
-  detail: "Slack bot for using pocket. You can add articles, show lists and save to pocket."
-  img: "pocket-slackbot.png"
+
 - project:
   title: AR-door
   link: "https://github.com/ebkn12/portal-arkit"
-  detail: "You can create a virtual door to different location. I gave a presentation at conputer graphics base."
+  detail: "You can create a virtual door to different location. I made a presentation at conputer graphics base class."
   img: "ardoor.jpg"
+
 - project:
   title: psvm-spiderman-movies
-  detail: "I tried to distinguish spider-man movie posters using PSVM(Processing Support Vector Machine)."
+  detail: "I tried to distinguish spider-man movie posters by using PSVM(Processing Support Vector Machine)."
   img: "spiderman.png"
+
 - project:
   title: protospace
   link: "https://github.com/ebkn12/protospace"
   detail: "Posting prototypes service. I created this at TECH::CAMP."
   img: protospace.png
+
+- project:
+  title: pocket-slackbot
+  link: "https://github.com/ebkn12/py-pocket-slackbot"
+  detail: "Slack bot for using pocket. You can add articles, show lists and save articles to pocket."
+  img: "pocket-slackbot.png"
+
 - project:
   title: Elevator architecture
   link: "https://github.com/ebkn12/Elevator"
-  detail: "My first work for Processing. I imitated an elevator architecture in my campus(Nakano). I gave a presentation at programing practice 1."
+  detail: "I imitated an elevator architecture in my campus(Nakano). I made a presentation at programing practice 1."
   img: elevator.png
+
 - project:
   title: Tennis game
   link: "https://github.com/ebkn12/TennisGame"
-  detail: "My first work for programming. I created an interactive tennis game. I used HSP. I gave a presentation at entertainment programing practice."
+  detail: "My first work. I created an interactive tennis game. I used HSP. I made a presentation at entertainment programing practice."
   img: tennisgame.png

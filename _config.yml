@@ -1,6 +1,6 @@
 # Site Settings
 title: Kenichi Ebinuma
-url: 'https://ebkn12.github.io'
+url: 'https://ebkn.github.io'
 baseurl: '' #change it according to your repository name
 
 # Enable one of these styles by removing #. Style will be applied only after restarting the build or serve.
@@ -17,7 +17,7 @@ pic: profile.jpg
 summary: "I'm a 3nd grade of university student at Meiji University. I major in science. I like playing tennis, watching movies and developing some products. I often create some products. I'd like to create product which changes our lifestyles."
 
 #sidebar links
-github: ebkn12
+github: ebkn
 twitter: '@ebikentennis'
 facebook: ebkn12
 #Update all the sections by editing the files inside _data folder.

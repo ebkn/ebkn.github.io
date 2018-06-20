@@ -3,21 +3,9 @@
   level: 80%
 
 - skill:
-  name: JavaScript & Angular
+  name: JavaScript & Angular & React
   level: 60%
 
 - skill:
-  name: Golang
+  name: Swift
   level: 40%
-
-- skill:
-  name: Python
-  level: 40%
-
-- skill:
-  name: PHP
-  level: 40%
-
-- skill:
-  name: Processing
-  level: 30%

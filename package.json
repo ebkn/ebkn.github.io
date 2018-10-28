@@ -1,0 +1,12 @@
+{
+  "name": "github.io",
+  "version": "0.0.1",
+  "main": "src/index.jsx",
+  "repository": "git@github.com:ebkn/ebkn.github.io",
+  "author": "ebkn <ktennis.mqekr12@gmail.com>",
+  "private": true,
+  "dependencies": {
+    "react": "^16.6.0",
+    "react-dom": "^16.6.0"
+  }
+}

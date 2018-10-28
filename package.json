@@ -7,7 +7,9 @@
   "private": true,
   "scripts": {
     "start": "webpack-dev-server --watch",
-    "build": "webpack"
+    "build": "webpack",
+    "lint": "eslint ./src/**/*.{js,jsx}",
+    "lint:fix": "yarn lint --fix"
   },
   "dependencies": {
     "@babel/core": "^7.1.2",

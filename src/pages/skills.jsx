@@ -1,6 +1,6 @@
 import React from 'react';
 
 const Skills = () => {
-  return <div />;
+  return <h2>SKILLS</h2>;
 };
 export default Skills;

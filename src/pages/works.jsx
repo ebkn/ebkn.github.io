@@ -1,6 +1,6 @@
 import React from 'react';
 
 const Works = () => {
-  return <div />;
+  return <h2>WORKS</h2>;
 };
 export default Works;

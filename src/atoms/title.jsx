@@ -1,5 +1,5 @@
-import React from "react";
-import styled from "styled-components";
+import React from 'react';
+import styled from 'styled-components';
 
 const Title = ({ title }) => <StyledH1>{title}</StyledH1>;
 const StyledH1 = styled.h1`

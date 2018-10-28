@@ -1,68 +1,68 @@
-import React from "react";
-import { slide as Menu } from "react-burger-menu";
-import { Link } from "react-router-dom";
-import styled from "styled-components";
-import { isMobile } from "../utils";
+import React from 'react';
+import { slide as Menu } from 'react-burger-menu';
+import { Link } from 'react-router-dom';
+import styled from 'styled-components';
+import { isMobile } from '../utils';
 
-const SideBar = () =>
-  isMobile() ? (
-    <Menu width="250" styles={menuStyles}>
-      <Link to="/">Top</Link>
-      <Link to="/aboutme">About me</Link>
-      <Link to="/skills">Skills</Link>
-      <Link to="/works">Works</Link>
-      <Link to="/jobs">Jobs</Link>
-    </Menu>
-  ) : (
-    <StyledMobileMenu>
-      <MobileLinkWrapper>
-        <MobileStyledLink to="/">Top</MobileStyledLink>
-        <MobileStyledLink to="/aboutme">About me</MobileStyledLink>
-        <MobileStyledLink to="/skills">Skills</MobileStyledLink>
-        <MobileStyledLink to="/works">Works</MobileStyledLink>
-        <MobileStyledLink to="/jobs">Jobs</MobileStyledLink>
-      </MobileLinkWrapper>
-    </StyledMobileMenu>
-  );
+/* eslint-disable no-use-before-define */
+const SideBar = () => (isMobile() ? (
+  <Menu width="250" styles={menuStyles}>
+    <Link to="/">Top</Link>
+    <Link to="/aboutme">About me</Link>
+    <Link to="/skills">Skills</Link>
+    <Link to="/works">Works</Link>
+    <Link to="/jobs">Jobs</Link>
+  </Menu>
+) : (
+  <StyledMobileMenu>
+    <MobileLinkWrapper>
+      <MobileStyledLink to="/">Top</MobileStyledLink>
+      <MobileStyledLink to="/aboutme">About me</MobileStyledLink>
+      <MobileStyledLink to="/skills">Skills</MobileStyledLink>
+      <MobileStyledLink to="/works">Works</MobileStyledLink>
+      <MobileStyledLink to="/jobs">Jobs</MobileStyledLink>
+    </MobileLinkWrapper>
+  </StyledMobileMenu>
+));
 const menuStyles = {
   bmBurgerButton: {
-    position: "fixed",
-    width: "36px",
-    height: "30px",
-    left: "36px",
-    top: "36px"
+    position: 'fixed',
+    width: '36px',
+    height: '30px',
+    left: '36px',
+    top: '36px',
   },
   bmBurgerBars: {
-    background: "#212121"
+    background: '#212121',
   },
   bmCrossButton: {
-    height: "24px",
-    width: "24px"
+    height: '24px',
+    width: '24px',
   },
   bmCross: {
-    background: "#bdc3c7"
+    background: '#bdc3c7',
   },
   bmMenu: {
-    background: "#373a47",
-    padding: "2.5em 1.5em 0",
-    fontSize: "1.15em"
+    background: '#373a47',
+    padding: '2.5em 1.5em 0',
+    fontSize: '1.15em',
   },
   bmMorphShape: {
-    fill: "#373a47"
+    fill: '#373a47',
   },
   bmItemList: {
-    color: "#b8b7ad",
-    padding: "0.8em"
+    color: '#b8b7ad',
+    padding: '0.8em',
   },
   bmItem: {
-    display: "block",
-    padding: "10px 0",
-    color: "#FAFAFA",
-    textDecoration: "none"
+    display: 'block',
+    padding: '10px 0',
+    color: '#FAFAFA',
+    textDecoration: 'none',
   },
   bmOverlay: {
-    background: "rgba(0, 0, 0, 0.3)"
-  }
+    background: 'rgba(0, 0, 0, 0.3)',
+  },
 };
 const StyledMobileMenu = styled.div`
   display: fixed;

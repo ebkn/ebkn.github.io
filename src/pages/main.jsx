@@ -1,8 +1,8 @@
-import React from "react";
-import ProfileIcon from "../atoms/profileIcon";
-import Title from "../atoms/title";
-import Text from "../atoms/text";
-import Container from "../atoms/container";
+import React from 'react';
+import ProfileIcon from '../atoms/profileIcon';
+import Title from '../atoms/title';
+import Text from '../atoms/text';
+import Container from '../atoms/container';
 
 const Main = () => (
   <Container>

@@ -8,7 +8,7 @@
   "scripts": {
     "start": "webpack-dev-server --watch",
     "build": "webpack",
-    "lint": "eslint ./src/**/*.{js,jsx}",
+    "lint": "eslint ./src/**/*.js",
     "lint:fix": "yarn lint --fix"
   },
   "dependencies": {

@@ -1,6 +1,5 @@
 import React from "react";
-import { BrowserRouter, Link, Route, Switch } from "react-router-dom";
-import { slide as Menu } from "react-burger-menu";
+import { BrowserRouter, Route, Switch } from "react-router-dom";
 import styled from "styled-components";
 import Main from "./pages/main";
 import AboutMe from "./pages/aboutMe";
@@ -8,6 +7,7 @@ import Skills from "./pages/skills";
 import Works from "./pages/works";
 import Jobs from "./pages/jobs";
 import NotFound from "./pages/notFound";
+import SideBar from "./molecules/sideBar";
 import Copyright from "./molecules/copyright";
 
 export default class App extends React.Component {
@@ -19,13 +19,7 @@ export default class App extends React.Component {
     return (
       <BrowserRouter>
         <GlobalStyledDiv>
-          <Menu width="250" styles={menuStyles}>
-            <Link to="/">Top</Link>
-            <Link to="/aboutme">About me</Link>
-            <Link to="/skills">Skills</Link>
-            <Link to="/works">Works</Link>
-            <Link to="/jobs">Jobs</Link>
-          </Menu>
+          <SideBar />
           <StyledContainer>
             <Switch>
               <Route path="/" exact component={Main} />
@@ -43,6 +37,8 @@ export default class App extends React.Component {
   }
 }
 const GlobalStyledDiv = styled.div`
+  display: flex;
+  width: 100vw;
   background-color: "FAFAFA";
   font-family: "Source Code Pro", sans-serif;
 `;
@@ -52,45 +48,8 @@ const StyledContainer = styled.main`
   justify-content: center;
   width: 100%;
   box-sizing: border-box;
-  padding: 30px 10px 10px 10px;
+  padding: 30px 20px 20px 20px;
+  padding-left: {
+    ()=>isMobile() ? '0' : "30%";
+  };
 `;
-const menuStyles = {
-  bmBurgerButton: {
-    position: "fixed",
-    width: "36px",
-    height: "30px",
-    left: "36px",
-    top: "36px"
-  },
-  bmBurgerBars: {
-    background: "#212121"
-  },
-  bmCrossButton: {
-    height: "24px",
-    width: "24px"
-  },
-  bmCross: {
-    background: "#bdc3c7"
-  },
-  bmMenu: {
-    background: "#373a47",
-    padding: "2.5em 1.5em 0",
-    fontSize: "1.15em"
-  },
-  bmMorphShape: {
-    fill: "#373a47"
-  },
-  bmItemList: {
-    color: "#b8b7ad",
-    padding: "0.8em"
-  },
-  bmItem: {
-    display: "block",
-    padding: "10px 0",
-    color: "#FAFAFA",
-    textDecoration: "none"
-  },
-  bmOverlay: {
-    background: "rgba(0, 0, 0, 0.3)"
-  }
-};

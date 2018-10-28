@@ -7,5 +7,6 @@ const StyledH1 = styled.h1`
   padding: 5px;
   font-size: 24px;
   color: "#212121";
+  text-align: center;
 `;
 export default Title;

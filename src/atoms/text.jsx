@@ -15,8 +15,8 @@ const TextWrapper = styled.div`
 `;
 const StyledP = styled.p`
   font-size: 16px;
-  line-height: 16px;
-  word-break: break-all;
+  line-height: 24px;
+  word-break: break-word;
   color: #212121;
 `;
 export default Text;

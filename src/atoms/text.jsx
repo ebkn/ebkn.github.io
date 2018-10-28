@@ -6,6 +6,6 @@ const StyledP = styled.p`
   font-size: 16px;
   line-height: 16px;
   word-break: break-all;
-  color: "#212121";
+  color: #212121;
 `;
 export default Text;

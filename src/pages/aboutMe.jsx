@@ -1,6 +1,5 @@
-import React from 'react';
+import React from "react";
+import Title from "../atoms/title";
 
-const AboutMe = () => {
-  return <h2>ABOUT ME</h2>
-};
+const AboutMe = () => <Title title="ABOUT ME" />;
 export default AboutMe;

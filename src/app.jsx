@@ -43,9 +43,6 @@ const GlobalStyledDiv = styled.div`
   font-family: "Source Code Pro", sans-serif;
 `;
 const StyledContainer = styled.main`
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
   width: 100%;
   box-sizing: border-box;
   padding: 30px 20px 20px 20px;

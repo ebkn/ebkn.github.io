@@ -2,12 +2,13 @@ import React from "react";
 import ProfileIcon from "../atoms/profileIcon";
 import Title from "../atoms/title";
 import Text from "../atoms/text";
+import Container from "../atoms/container";
 
 const Main = () => (
-  <div>
+  <Container>
     <ProfileIcon />
-    <Title title="This is ebiken's page" />
+    <Title title="Ebinuma Kenichi" />
     <Text text="This is a text" />
-  </div>
+  </Container>
 );
 export default Main;

@@ -9,6 +9,5 @@ const StyledDiv = styled.div`
   justify-content: center;
   width: 100%;
   box-sizing: border-box;
-  text-align: center;
 `;
 export default Container;

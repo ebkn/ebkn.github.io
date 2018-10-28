@@ -17,13 +17,13 @@ export default class App extends React.Component {
   render() {
     return (
       <BrowserRouter>
-        <div>
+        <StyledDiv>
           <Menu width="250" styles={menuStyles}>
-            <StyledLink to="/">Top</StyledLink>
-            <StyledLink to="/aboutme">About me</StyledLink>
-            <StyledLink to="/skills">Skills</StyledLink>
-            <StyledLink to="/works">Works</StyledLink>
-            <StyledLink to="/jobs">Jobs</StyledLink>
+            <Link to="/">Top</Link>
+            <Link to="/aboutme">About me</Link>
+            <Link to="/skills">Skills</Link>
+            <Link to="/works">Works</Link>
+            <Link to="/jobs">Jobs</Link>
           </Menu>
           <Switch>
             <Route path="/" exact component={Main} />
@@ -33,13 +33,15 @@ export default class App extends React.Component {
             <Route path="/jobs" exact component={Jobs} />
             <Route component={NotFound} />
           </Switch>
-        </div>
+        </StyledDiv>
       </BrowserRouter>
     );
   }
 }
-
-const StyledLink = styled(Link)``;
+const StyledDiv = styled.div`
+  background-color: "FAFAFA";
+  font-family: 'Source Code Pro',sans-serif;
+`;
 const menuStyles = {
   bmBurgerButton: {
     position: "fixed",

@@ -11,7 +11,7 @@ import SideBar from './molecules/sideBar';
 import Copyright from './molecules/copyright';
 
 const App = () => (
-  <BrowserRouter>
+  <BrowserRouter basename={process.env.PUBLIC_URL}>
     <GlobalStyledDiv>
       <SideBar />
       <StyledContainer>

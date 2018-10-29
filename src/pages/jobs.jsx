@@ -1,12 +1,26 @@
 import React from 'react';
 import Container from '../atoms/container';
 import Title from '../atoms/title';
-import Text from '../atoms/text';
+import Job from '../molecules/job';
+import info from '../../info';
 
 const Jobs = () => (
   <Container>
     <Title title="JOBS" />
-    <Text text="WIP" />
+    {info.jobs.map(({
+      name,
+      position,
+      term,
+      description,
+    }) => (
+      <Job
+        name={name}
+        position={position}
+        term={term}
+        description={description}
+        key={name}
+      />
+    ))}
   </Container>
 );
 

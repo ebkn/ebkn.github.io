@@ -5,11 +5,16 @@ import info from '../../info';
 
 const SocialIcons = () => (
   <IconsWrapper>
-    {info.links.map(link => (
+    {info.links.map(({
+      url,
+      name,
+      iconUrl,
+    }) => (
       <SocialIcon
-        url={link.url}
-        name={link.name}
-        iconUrl={link.iconUrl}
+        url={url}
+        name={name}
+        iconUrl={iconUrl}
+        key={name}
       />
     ))}
   </IconsWrapper>

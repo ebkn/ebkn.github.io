@@ -26,18 +26,18 @@ export default {
   works: [
   ],
   jobs: [
-    {
-      name: '',
-      position: 'Engineer',
-      term: '2018/8~',
-      description: '',
-    },
-    {
-      name: '',
-      position: 'Engineer',
-      term: '2018/9~',
-      description: '',
-    },
+    // {
+    //   name: '',
+    //   position: 'Engineer',
+    //   term: '2018/8~',
+    //   description: '',
+    // },
+    // {
+    //   name: '',
+    //   position: 'Engineer',
+    //   term: '2018/9~',
+    //   description: '',
+    // },
     {
       name: 'playground Co,. Ltd.',
       position: 'Engineer intern',
@@ -52,7 +52,7 @@ export default {
     },
     {
       name: 'div inc.',
-      position: 'Web mentor at TECH::CAMP, TECH::EXPERT',
+      position: 'Web mentor at TECH::CAMP',
       term: '2017/4~',
       description: '',
     },

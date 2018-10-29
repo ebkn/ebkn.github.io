@@ -1,9 +1,10 @@
 import React from 'react';
 import styled from 'styled-components';
+import info from '../../info';
 
 const ProfileIcon = () => (
   <StyledWrapper>
-    <StyledImg src="https://s3.amazonaws.com/ebkn/bb8avatar.jpg" alt="avatar" />
+    <StyledImg src={info.iconUrl} alt="avatar" />
   </StyledWrapper>
 );
 const StyledWrapper = styled.div`

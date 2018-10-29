@@ -1,8 +1,7 @@
 import React from 'react';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import styled from 'styled-components';
-import Top from './pages/top';
-import AboutMe from './pages/aboutMe';
+import Home from './pages/home';
 import Skills from './pages/skills';
 import Works from './pages/works';
 import Jobs from './pages/jobs';
@@ -16,8 +15,7 @@ const App = () => (
       <SideBar />
       <StyledContainer>
         <Switch>
-          <Route path="/" exact component={Top} />
-          <Route path="/aboutme" exact component={AboutMe} />
+          <Route path="/" exact component={Home} />
           <Route path="/skills" exact component={Skills} />
           <Route path="/works" exact component={Works} />
           <Route path="/jobs" exact component={Jobs} />

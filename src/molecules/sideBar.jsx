@@ -7,8 +7,7 @@ import { isMobile } from '../utils';
 /* eslint-disable no-use-before-define */
 const SideBar = () => (isMobile() ? (
   <Menu width="250" styles={menuStyles}>
-    <Link to="/">Top</Link>
-    <Link to="/aboutme">About me</Link>
+    <Link to="/">Home</Link>
     <Link to="/skills">Skills</Link>
     <Link to="/works">Works</Link>
     <Link to="/jobs">Jobs</Link>
@@ -16,8 +15,7 @@ const SideBar = () => (isMobile() ? (
 ) : (
   <StyledMobileMenu>
     <MobileLinkWrapper>
-      <MobileStyledLink to="/">Top</MobileStyledLink>
-      <MobileStyledLink to="/aboutme">About me</MobileStyledLink>
+      <MobileStyledLink to="/">Home</MobileStyledLink>
       <MobileStyledLink to="/skills">Skills</MobileStyledLink>
       <MobileStyledLink to="/works">Works</MobileStyledLink>
       <MobileStyledLink to="/jobs">Jobs</MobileStyledLink>

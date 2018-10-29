@@ -6,7 +6,7 @@ import SocialIcons from '../molecules/socialIcons';
 import Text from '../atoms/text';
 import info from '../../info';
 
-const Top = () => (
+const Home = () => (
   <Container>
     <ProfileIcon />
     <Title title={info.name} />
@@ -14,4 +14,4 @@ const Top = () => (
     <Text text={info.shortProfile} />
   </Container>
 );
-export default Top;
+export default Home;

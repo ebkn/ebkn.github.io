@@ -16,7 +16,6 @@ export default {
       iconUrl: 'https://s3-ap-northeast-1.amazonaws.com/ebkn/twitter_logo.png',
     },
   ],
-  aboutme: 'I\'m a ',
   skills: {
     programming: [
     ],
@@ -41,7 +40,7 @@ export default {
     {
       name: 'playground Co,. Ltd.',
       position: 'Engineer intern',
-      term: '2017/7~',
+      term: '2017/7~2018/11',
       description: '',
     },
     {
@@ -53,7 +52,7 @@ export default {
     {
       name: 'div inc.',
       position: 'Web mentor at TECH::CAMP',
-      term: '2017/4~',
+      term: '2017/4~2018/7',
       description: '',
     },
   ],

@@ -26,7 +26,6 @@ const App = () => (
     </GlobalStyledDiv>
   </BrowserRouter>
 );
-export default App;
 const GlobalStyledDiv = styled.div`
   display: flex;
   width: 100vw;

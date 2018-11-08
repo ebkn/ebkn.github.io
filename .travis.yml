@@ -9,8 +9,6 @@ before_install:
 
 cache:
   yarn: true
-  directories:
-    - "node_modules"
 
 install:
   - yarn install

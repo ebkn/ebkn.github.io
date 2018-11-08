@@ -6,13 +6,15 @@ import Skills from './pages/skills';
 import Works from './pages/works';
 import Jobs from './pages/jobs';
 import NotFound from './pages/notFound';
-import SideBar from './molecules/sideBar';
+import MobileSideBar from './molecules/mobileSideBar';
+import PcSideBar from './molecules/pcSideBar';
 import Copyright from './molecules/copyright';
+import { isMobile } from './utils';
 
 const App = () => (
   <BrowserRouter basename={process.env.PUBLIC_URL}>
     <GlobalStyledDiv>
-      <SideBar />
+      {isMobile() ? <MobileSideBar /> : <PcSideBar />}
       <StyledContainer>
         <Switch>
           <Route path="/" exact component={Home} />
@@ -38,3 +40,4 @@ const StyledContainer = styled.main`
   padding: 30px 20px 20px 20px;
   padding-left: {() => isMobile()? '0' : "30%"};
 `;
+export default App;

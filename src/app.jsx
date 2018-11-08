@@ -13,9 +13,9 @@ import { isMobile } from './utils';
 
 const App = () => (
   <BrowserRouter basename={process.env.PUBLIC_URL}>
-    <GlobalStyledDiv>
+    <StyledContainer>
       {isMobile() ? <MobileSideBar /> : <PcSideBar />}
-      <StyledContainer>
+      <StyledMain>
         <Switch>
           <Route path="/" exact component={Home} />
           <Route path="/skills" exact component={Skills} />
@@ -24,17 +24,15 @@ const App = () => (
           <Route component={NotFound} />
         </Switch>
         <Copyright />
-      </StyledContainer>
-    </GlobalStyledDiv>
+      </StyledMain>
+    </StyledContainer>
   </BrowserRouter>
 );
-const GlobalStyledDiv = styled.div`
+const StyledContainer = styled.div`
   display: flex;
   width: 100vw;
-  background-color: "FAFAFA";
-  font-family: "Source Code Pro", sans-serif;
 `;
-const StyledContainer = styled.main`
+const StyledMain = styled.main`
   width: 100%;
   box-sizing: border-box;
   padding: 30px 20px 20px 20px;

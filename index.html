@@ -1,21 +1,31 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ja">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>ebiken's portfolio</title>
+    <meta name="author" content="Kenichi Ebinuma">
+    <meta name="description" content="Kenichi Ebinuma (ebiken)'s portfolio hosted by Github Pages.">
+    <link rel="shortcut icon" href="https://s3-ap-northeast-1.amazonaws.com/ebkn/portfolio_favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet">
+    <style>
+      html, body {
+        background-color: white;
+        font-family: 'Source Code Pro', monospace;
+      }
+    </style>
   </head>
   <body>
     <div id="root"></div>
+    <script>
+      (function(){
+        var redirect = sessionStorage.redirect;
+        delete sessionStorage.redirect;
+        if (redirect && redirect != location.href) {
+          history.replaceState(null, null, redirect);
+        }
+      })();
+    </script>
+    <script src="/main.js"></script>
   </body>
-  <script>
-    (function(){
-      var redirect = sessionStorage.redirect;
-      delete sessionStorage.redirect;
-      if (redirect && redirect != location.href) {
-        history.replaceState(null, null, redirect);
-      }
-    })();
-  </script>
-  <script src="/main.js"></script>
 </html>

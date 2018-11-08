@@ -30972,7 +30972,7 @@ function _templateObject4() {
 }
 
 function _templateObject3() {
-  var data = _taggedTemplateLiteral(["\n  font-size: 26px;\n  line-height: 40px;\n"]);
+  var data = _taggedTemplateLiteral(["\n  font-size: 26px;\n  line-height: 40px;\n  border-style: none;\n  --webkit-appearance: none;\n"]);
 
   _templateObject3 = function _templateObject3() {
     return data;

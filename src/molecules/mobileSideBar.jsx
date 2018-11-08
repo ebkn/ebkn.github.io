@@ -2,46 +2,29 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 
-class MobileSideBar extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = { open: false };
-  }
-
-  onClickButton(e) {
-    e.preventDefault();
-    this.setState(prevState => ({ open: !prevState.open }));
-  }
-
-  render() {
-    const { open } = this.state;
-    return (
-      <StyledPcMenu open={open}>
-        <IconWrapper onClick={e => this.onClickButton(e)}>
-          <ToggleIcon type="button">{open ? '<' : '>'}</ToggleIcon>
-        </IconWrapper>
-        {open ? (
-          <div>
-            <PcStyledLink to="/">Home</PcStyledLink>
-            <PcStyledLink to="/skills">Skills</PcStyledLink>
-            <PcStyledLink to="/works">Works</PcStyledLink>
-            <PcStyledLink to="/jobs">Jobs</PcStyledLink>
-          </div>
-        ) : null}
-      </StyledPcMenu>
-    );
-  }
-}
+const MobileSideBar = ({ open, toggleOpen }) => (
+  <StyledPcMenu open={open}>
+    <IconWrapper onClick={e => toggleOpen(e)}>
+      <ToggleIcon type="button">{open ? '<' : '>'}</ToggleIcon>
+    </IconWrapper>
+    {open ? (
+      <div>
+        <PcStyledLink to="/">Home</PcStyledLink>
+        <PcStyledLink to="/skills">Skills</PcStyledLink>
+        <PcStyledLink to="/works">Works</PcStyledLink>
+        <PcStyledLink to="/jobs">Jobs</PcStyledLink>
+      </div>
+    ) : null}
+  </StyledPcMenu>
+);
 const StyledPcMenu = styled.div.attrs({
   style: (props => (
     props.open ? ({
-      position: 'static',
       borderRight: '2px dashed #9E9E9E',
-    }) : ({
-      position: 'absolute',
-    })
+    }) : null
   )),
 })`
+  position: fixed;
   width: 30%;
   height: 100vh;
   box-sizing: border-box;

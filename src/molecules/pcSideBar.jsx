@@ -13,7 +13,7 @@ const PcSideBar = () => (
   </StyledPcMenu>
 );
 const StyledPcMenu = styled.div`
-  display: fixed;
+  position: fixed;
   width: 30%;
   height: 100vh;
   box-sizing: border-box;

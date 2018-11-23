@@ -1,7 +1,8 @@
-import React from 'react';
+import { h } from 'preact';
 import styled from 'styled-components';
 import info from '../../info';
 
+/** @jsx h */
 const ProfileIcon = () => (
   <StyledWrapper>
     <StyledImg src={info.iconUrl} alt="avatar" />

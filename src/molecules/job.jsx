@@ -1,8 +1,9 @@
-import React from 'react';
+import { h } from 'preact';
 import styled from 'styled-components';
 import SubTitle from '../atoms/subTitle';
 import Text from '../atoms/text';
 
+/** @jsx h */
 const Job = ({
   name,
   position,

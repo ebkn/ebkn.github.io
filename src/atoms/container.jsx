@@ -1,6 +1,7 @@
-import React from 'react';
+import { h } from 'preact';
 import styled from 'styled-components';
 
+/** @jsx h */
 const Container = ({ children }) => <StyledDiv>{children}</StyledDiv>;
 const StyledDiv = styled.div`
   display: flex;

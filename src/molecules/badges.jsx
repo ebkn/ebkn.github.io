@@ -1,6 +1,7 @@
-import React from 'react';
+import { h } from 'preact';
 import styled from 'styled-components';
 
+/** @jsx h */
 const Badges = () => (
   <BadgesWrapper>
     <img src="https://img.shields.io/badge/status-good-green.svg" alt="my status" />

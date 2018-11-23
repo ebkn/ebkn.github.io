@@ -1,7 +1,8 @@
-import React from 'react';
+import { h } from 'preact';
 import styled from 'styled-components';
 import Text from '../atoms/text';
 
+/** @jsx h */
 const CenteredText = ({ text }) => (
   <TextWrapper>
     <Text text={text} />

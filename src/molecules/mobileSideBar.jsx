@@ -1,7 +1,8 @@
-import React from 'react';
+import { h } from 'preact';
 import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 
+/** @jsx h */
 const MobileSideBar = ({ open, toggleOpen }) => (
   <StyledPcMenu open={open}>
     <IconWrapper onClick={e => toggleOpen(e)}>
@@ -18,11 +19,7 @@ const MobileSideBar = ({ open, toggleOpen }) => (
   </StyledPcMenu>
 );
 const StyledPcMenu = styled.div.attrs({
-  style: (props => (
-    props.open ? ({
-      borderRight: '2px dashed #9E9E9E',
-    }) : null
-  )),
+  style: props => (props.open ? { borderRight: '2px dashed #9E9E9E' } : null),
 })`
   position: fixed;
   width: 30%;

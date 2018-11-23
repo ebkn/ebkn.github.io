@@ -1,9 +1,10 @@
-import React from 'react';
+import { h } from 'preact';
 import Container from '../atoms/container';
 import Title from '../atoms/title';
 import Job from '../molecules/job';
 import info from '../../info';
 
+/** @jsx h */
 const Jobs = () => (
   <Container>
     <Title title="JOBS" />

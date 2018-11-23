@@ -1,6 +1,7 @@
-import React from 'react';
+import { h } from 'preact';
 import styled from 'styled-components';
 
+/** @jsx h */
 const Title = ({ title }) => <StyledH1>{title}</StyledH1>;
 const StyledH1 = styled.h1`
   margin: 0;

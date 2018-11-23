@@ -1,6 +1,7 @@
-import React from 'react';
+import { h } from 'preact';
 import styled from 'styled-components';
 
+/** @jsx h */
 const SocialIcon = ({ url, name, iconUrl }) => (
   <IconWrapper>
     <StyledLink href={url} target="_blank">

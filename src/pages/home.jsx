@@ -1,4 +1,4 @@
-import React from 'react';
+import { h } from 'preact';
 import Container from '../atoms/container';
 import ProfileIcon from '../atoms/profileIcon';
 import Title from '../atoms/title';
@@ -7,6 +7,7 @@ import Badges from '../molecules/badges';
 import CenteredText from '../molecules/centeredText';
 import info from '../../info';
 
+/** @jsx h */
 const Home = () => (
   <Container>
     <ProfileIcon />

@@ -1,7 +1,8 @@
-import React from 'react';
+import { h } from 'preact';
 import styled from 'styled-components';
 import Title from '../atoms/title';
 
+/** @jsx h */
 const NotFound = () => (
   <StyledWrapper>
     <Title title="404 NOT FOUND" />

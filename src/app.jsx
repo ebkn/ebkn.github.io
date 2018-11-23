@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import { h, Component } from 'preact';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import styled from 'styled-components';
 import Home from './pages/home';
@@ -11,6 +11,7 @@ import PcSideBar from './molecules/pcSideBar';
 import Copyright from './molecules/copyright';
 import { isMobile } from './utils';
 
+/** @jsx h */
 export default class App extends Component {
   constructor(props) {
     super(props);

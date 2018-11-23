@@ -1,6 +1,6 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
+import { h, render } from 'preact';
 import 'normalize.css';
 import App from './app';
 
-ReactDOM.render(<App />, document.getElementById('root'));
+/** @jsx h */
+render(<App />, document.getElementById('root'));

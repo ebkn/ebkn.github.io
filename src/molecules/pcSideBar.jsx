@@ -1,14 +1,15 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
+import { h } from 'preact';
+import { Link } from 'preact-router/match';
 import styled from 'styled-components';
 
+/** @jsx h */
 const PcSideBar = () => (
   <StyledPcMenu>
     <div>
-      <PcStyledLink to="/">Home</PcStyledLink>
-      <PcStyledLink to="/skills">Skills</PcStyledLink>
-      <PcStyledLink to="/works">Works</PcStyledLink>
-      <PcStyledLink to="/jobs">Jobs</PcStyledLink>
+      <PcStyledLink href="/">Home</PcStyledLink>
+      <PcStyledLink href="/skills">Skills</PcStyledLink>
+      <PcStyledLink href="/works">Works</PcStyledLink>
+      <PcStyledLink href="/jobs">Jobs</PcStyledLink>
     </div>
   </StyledPcMenu>
 );

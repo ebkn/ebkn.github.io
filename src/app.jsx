@@ -1,5 +1,5 @@
 import { h, Component } from 'preact';
-import { BrowserRouter, Route, Switch } from 'react-router-dom';
+import Router from 'preact-router';
 import styled from 'styled-components';
 import Home from './pages/home';
 import Skills from './pages/skills';
@@ -26,26 +26,23 @@ export default class App extends Component {
   render() {
     const { sideBarOpen } = this.state;
     return (
-      <BrowserRouter basename={process.env.PUBLIC_URL}>
-        <StyledContainer>
-          {isMobile() ? (
-            <MobileSideBar
-              open={sideBarOpen}
-              toggleOpen={e => this.toggleSideBarOpen(e)}
-            />
-          ) : <PcSideBar />}
-          <StyledMain sideBarOpen={sideBarOpen}>
-            <Switch>
-              <Route path="/" exact component={Home} />
-              <Route path="/skills" exact component={Skills} />
-              <Route path="/works" exact component={Works} />
-              <Route path="/jobs" exact component={Jobs} />
-              <Route component={NotFound} />
-            </Switch>
-            <Copyright />
-          </StyledMain>
-        </StyledContainer>
-      </BrowserRouter>
+      <StyledContainer>
+        {isMobile() ? (
+          <MobileSideBar open={sideBarOpen} toggleOpen={e => this.toggleSideBarOpen(e)} />
+        ) : (
+          <PcSideBar />
+        )}
+        <StyledMain sideBarOpen={sideBarOpen}>
+          <Router>
+            <Home path="/" />
+            <Skills path="/skills" />
+            <Works path="/works" />
+            <Jobs path="/jobs" />
+            <NotFound default />
+          </Router>
+          <Copyright />
+        </StyledMain>
+      </StyledContainer>
     );
   }
 }
@@ -54,13 +51,7 @@ const StyledContainer = styled.div`
   width: 100vw;
 `;
 const StyledMain = styled.main.attrs({
-  style: (props => (
-    (isMobile() && !props.sideBarOpen) ? ({
-      marginLeft: '0',
-    }) : ({
-      marginLeft: '30%',
-    })
-  )),
+  style: props => (isMobile() && !props.sideBarOpen ? { marginLeft: '0' } : { marginLeft: '30%' }),
 })`
   width: 100%;
   box-sizing: border-box;

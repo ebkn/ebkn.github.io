@@ -1,5 +1,5 @@
 import { h } from 'preact';
-import { Link } from 'react-router-dom';
+import { Link } from 'preact-router';
 import styled from 'styled-components';
 
 /** @jsx h */
@@ -10,10 +10,10 @@ const MobileSideBar = ({ open, toggleOpen }) => (
     </IconWrapper>
     {open ? (
       <div>
-        <PcStyledLink to="/">Home</PcStyledLink>
-        <PcStyledLink to="/skills">Skills</PcStyledLink>
-        <PcStyledLink to="/works">Works</PcStyledLink>
-        <PcStyledLink to="/jobs">Jobs</PcStyledLink>
+        <PcStyledLink href="/">Home</PcStyledLink>
+        <PcStyledLink href="/skills">Skills</PcStyledLink>
+        <PcStyledLink href="/works">Works</PcStyledLink>
+        <PcStyledLink href="/jobs">Jobs</PcStyledLink>
       </div>
     ) : null}
   </StyledPcMenu>

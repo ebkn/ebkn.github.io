@@ -16,7 +16,7 @@
     "@babel/preset-env": "^7.2.3",
     "@babel/preset-react": "^7.0.0",
     "babel-loader": "^8.0.4",
-    "css-loader": "^1.0.0",
+    "css-loader": "^2.1.0",
     "normalize.css": "^8.0.0",
     "preact": "^8.4.2",
     "preact-compat": "^3.18.4",

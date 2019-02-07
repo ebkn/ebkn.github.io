@@ -37,8 +37,10 @@ const IconWrapper = styled.div`
 const ToggleIcon = styled.button`
   font-size: 26px;
   line-height: 40px;
+  background-color: transparent;
+  border: 0;
   border-style: none;
-  --webkit-appearance: none;
+  outline: 0;
 `;
 const PcStyledLink = styled(Link)`
   display: block;
